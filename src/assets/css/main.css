@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+.page-container {
+  @apply bg-white antialiased font-sans text-gray-800 max-w-screen-xl mx-auto p-0 lg:p-8;
+}
+
+.page-section {
+  @apply border border-[#F5F5F5];
+}
+
+.tabs-nav ul {
+  @apply flex items-center justify-start sm:justify-center border-b border-[#F5F5F5] ps-6 md:ps-8 lg:ps-0 overflow-x-auto;
+}
+
+.tabs-nav li {
+  @apply border-r border-l border-[#F5F5F5];
+}
+
+.tabs-nav li.active {
+  @apply border-r-0 border-l-0;
+}
+
+.tabs-nav li a {
+  @apply inline-block min-w-[140px] text-[16px] font-semibold text-gray-500 py-2 px-6 text-center font-medium;
+}
+
+.tabs-nav li.active a {
+  @apply text-[#6D2DD3] bg-[#F9F6FF];
+}
+
+.tabs-nav li.active {
+  @apply border-b-2 border-[#6D2DD3];
+}
+
+.hero-section {
+  @apply relative overflow-x-hidden;
+  background-color: #fffbef;
+  background-image: linear-gradient(to right, #f5eadd 1px, transparent 1px),
+    linear-gradient(to bottom, #f5eadd 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.hero-title {
+  @apply text-[32px] font-bold py-3 pt-6 px-6 sm:px-10 bg-[#fffbef] text-[#564616];
+}
+
+.image-gallery {
+  @apply relative h-64 sm:h-70 w-min md:w-full flex justify-center justify-self-center items-center gap-3 sm:gap-6 md:gap-10;
+}
+
+.image-wrapper img {
+  @apply w-full h-full;
+}
+
+.image-wrapper.one {
+  @apply w-48 h-48 sm:w-64 sm:h-64 z-10;
+}
+.image-wrapper.two {
+  @apply w-48 h-48 sm:w-64 sm:h-64 z-10;
+}
+.image-wrapper.three {
+  @apply w-48 h-48 sm:w-64 sm:h-64 z-10;
+}
+
+.promo-banner {
+  @apply py-5 px-6 sm:px-10 bg-[#fffbef] flex justify-between items-start sm:items-center;
+}
+.promo-banner p {
+  @apply text-[16px] text-lg md:pe-0 font-bold text-[#564616];
+}
+.promo-banner svg {
+  @apply text-[#564616] h-[40px] w-[40px];
+}
+
+.content-section {
+  @apply mt-16 grid grid-cols-1 lg:grid-cols-2 gap-16;
+}
+
+.how-it-works-section h2 {
+  @apply text-4xl font-bold text-gray-900;
+}
+.how-it-works-section > p {
+  @apply mt-4 text-gray-600 text-lg leading-relaxed;
+}
+.how-it-works-section .cta-prompt {
+  @apply mt-12 text-gray-500 font-medium tracking-widest text-sm;
+}
+.how-it-works-section .cta-button {
+  @apply mt-4 w-full sm:w-auto text-white font-bold py-4 px-10 rounded-xl text-lg transition-transform duration-200 hover:scale-105;
+  background-image: linear-gradient(to right, #a78bfa, #8b5cf6);
+}
+
+.steps-section ul {
+  @apply space-y-6;
+}
+.step-item {
+  @apply flex items-start gap-5;
+}
+.step-icon {
+  @apply w-12 h-12 rounded-xl flex-shrink-0;
+  background-color: #f5f3ff;
+}
+.step-content h3 {
+  @apply font-bold text-lg text-gray-800;
+}
+.step-content p {
+  @apply mt-1 text-gray-600;
+}
